@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url("images/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+   height:100vh;
+   overflow:hidden;
+    font-family:'poppins',sans-serif;
+    max-width:375px;
+}
+
+
+.container{
+    color:white;
+    padding:0px 60px;
+   
+}
+
+.current-info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.date-container{
+    font-weight:100;
+}
+.date-container .time{
+ 
+    font-size:50px;
+}
+
+.date-container #am-pm{
+    margin-left:20px;
+    font-size:30px;
+}
+
+.date-container .date{
+    font-size:30px;
+}
+
+.current-info .others{
+    display:flex;
+    flex-direction: column;
+    background:rgba(24,24,27,0.6);
+    padding:10px;
+    border-radius: 10px;
+    border:1px solid #eee;
+    margin:10px 0;
+}
+
+.current-info .others .weather-item{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.future-forecast{
+    display:flex;
+    color:white;
+    bottom:0;
+    padding:15px;
+    position:fixed;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+   
+    background:rgba(24,24,27,0.8);
+}
+
+.future-forecast .weather-forecast{
+    display:flex;
+ 
+    
+}
+
+
+.today{
+    border:1px solid #eee;
+    border-radius:10px;
+    padding:15px;
+    display:flex;
+
+}
+
+.other .day{
+    padding:5px 15px;
+    border-radius:50px;
+    text-align: center;
+    background:#3C3C44;
+    margin-bottom:2rem;
+}
+
+.weather-forecast .weather-forecast-item{
+    display:flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 10px;
+    border:1px solid #eee;
+    border-radius:10px;
+    padding:15px;
+
+}
+
+.weather-forecast .weather-forecast-item .day{
+    padding:0 15px;
+    border-radius:50px;
+    text-align: center;
+    background:#3C3C44;
+}
+
+.time-zone{
+    font-weight:400;
+}
+
+@media only screen and (max-width:730px){
+
+    .future-forecast{
+        justify-content:start;
+        align-items:none;
+        overflow-y:scroll;
+    }
+}
+
+@media only screen and (max-width:1000px){
+
+    .future-forecast{
+        justify-content:start;
+        align-items:none;
+        overflow-x:scroll;
+    }
+}
